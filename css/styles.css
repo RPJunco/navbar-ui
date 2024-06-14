@@ -1,0 +1,201 @@
+
+:root{
+    --body-bgcolor: #fae4cd;
+
+    --navbar-with-sb-bgcolor: #fff;
+    --navbar-with-sb-a-bgcolor: #000;
+
+    --supryze-a-color: #0c5fbf;
+    --download-a-color: #0c5fbf;
+    
+    --register-a-bgcolor: #0c5fbf;
+    --register-a-color: #fff;
+    --register-a-hover-bgcolor: #fff;
+    --register-a-hover-color: #0c5fbf;
+
+    --a-hover-bgcolor: #0c5fbf;
+    --a-hover-color: #fff;
+}
+
+body {
+    background-color: var(--body-bgcolor);
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+/*Estilos aplicados al section que contiene la clase contenedor-navbar-with-sb*/
+/*Algunos de estos estilos son tanto aplicados al contenedor-navbar-with-sb y al contenedor-navbar-without-sb*/
+
+.contenedor-navbar-with-sb {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.contenedor-navbar-with-sb h2, .contenedor-navbar-without-sb h2{
+    font-size: 30px;
+}
+
+.navbar-with-sb {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--navbar-with-sb-bgcolor);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.left-links {
+    display: flex;
+    align-items: center;
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.left-links a, .right-links a {
+    margin: 15px 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--navbar-with-sb-a-bgcolor);
+    transition: background-color 1.9s, color 1.9s;
+    cursor: pointer;
+}
+
+.left-links a:hover, .right-links a:hover {
+    background-color: var(--a-hover-bgcolor);
+    color: var(--a-hover-color);
+    border-radius: 4px;
+}
+
+.search-bar {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.326);
+    opacity: 0.8;
+    border-radius: 4px;
+    margin: 20px 0px;
+    width: 420px;
+}
+
+.btn-search-bar {
+    background-color: white;
+    border: none;
+}
+
+.btn-search-bar img {
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+}
+
+.btn-search-bar {
+    padding: 0px;
+    transition: color 1.9s, background-color 1.9s;
+}
+
+.btn-search-bar:hover{
+    background-color: rgb(243, 238, 238);
+}
+
+.navbar-with-sb .search-bar-content {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition:background-color 1.9s;
+}
+
+.search-bar-content:hover{
+    background-color: rgb(243, 238, 238);
+}
+
+.left-links .img-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.left-links .supryze-a{
+    color: var(--supryze-a-color);
+    font-weight: bold;
+}
+
+.right-links .download-a {
+    padding: 7px 15px;
+    font-weight: bold;
+    border: 2px solid var(--download-a-color);
+    border-radius: 4px;
+}
+
+.right-links .register-a {
+    font-weight: bold;
+    padding: 7px 15px;
+    border: 2px solid var(--register-a-bgcolor);
+    border-radius: 4px;
+    color: var(--register-a-color);
+    background-color: var(--register-a-bgcolor);
+    transition: color 1.9s, background-color 1.9s;
+}
+
+.right-links .register-a:hover{
+    color: var(--register-a-hover-color);
+    background-color: var(--register-a-hover-bgcolor);
+}
+
+/*Estilos aplicado al section que contiene la clase contenedor-navbar-without-sb*/
+
+.contenedor-navbar-without-sb {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.navbar-without-sb {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar-with-sb-bgcolor);
+    border-radius: 10px;
+    padding: 5px 0px;
+}
+
+.navbar-without-sb a {
+    margin: 15px 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--navbar-with-sb-a-bgcolor);
+    transition: background-color 1.9s, color 1.9s;
+    cursor: pointer;
+}
+
+.navbar-without-sb a:hover {
+    background-color: var(--a-hover-bgcolor);
+    color: var(--a-hover-color);
+    border-radius: 4px;
+}
+
+.navbar-without-sb .left-links{
+    padding: 5px 200px 0px 30px;
+}
+
+.navbar-without-sb .right-links{
+    padding: 5px 30px 0px 200px;
+}
