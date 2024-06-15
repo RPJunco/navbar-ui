@@ -125,3 +125,125 @@
         height: 30px;
     }
 }
+
+@media (max-width: 1024px){
+
+    /*Estilos aplicados al section con clase contenedor-navbar-with-sb*/
+    .search-bar {
+        width: 200px;
+    }
+
+    /*Estilos aplicados al section con clase contenedor-navbar-without-sb*/
+    .navbar-without-sb .left-links{
+        padding: 0px 101px 0px 20px;
+    }
+    
+    .navbar-without-sb .right-links{
+        padding: 0px 20px 0px 101px;
+    }
+}
+
+@media (max-width: 768px){
+    /*Estilos aplicados al section con clase contenedor-navbar-with-sb*/
+    
+    .contenedor-navbar-with-sb {
+        flex-wrap: nowrap;
+        padding: 50px 0px;
+        align-items: center;
+    }
+
+    .navbar-with-sb {
+        flex-wrap: wrap;
+        padding: 0px;
+        width: 720px;
+    }
+
+    .search-bar {
+        width: 600px;
+    }
+
+    /*Estilos aplicados al section con clase contenedor-navbar-without-sb*/
+    
+    .contenedor-navbar-without-sb {
+        flex-wrap: nowrap;
+        padding: 50px 0px 100px 0px;
+        align-items: center;
+    }
+
+    .navbar-without-sb .left-links, .navbar-without-sb .right-links {
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /*Estilos aplicados al section con clase contenedor-navbar-with-sb*/
+    .contenedor-navbar-with-sb {
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    .navbar-with-sb{
+        width: 428px;
+        padding: 0px;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+
+
+     /*Estilos aplicados al section con clase contenedor-navbar-without-sb*/
+
+    .contenedor-navbar-without-sb {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-without-sb {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px) {
+    /*Estilos aplicados al section con clase contenedor-navbar-with-sb*/
+    .contenedor-navbar-with-sb {
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    .navbar-with-sb{
+        width: 95%;
+        padding: 0px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .navbar-with-sb .left-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-with-sb .right-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*Estilos aplicados al section con clase contenedor-navbar-without-sb*/
+
+    .navbar-without-sb {
+        width: 95%;
+    }
+
+    .navbar-without-sb .left-links {
+        flex-direction: column;
+    }
+
+    .navbar-without-sb .right-links {
+        flex-direction: column;
+    }
+
+}
